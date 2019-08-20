@@ -241,7 +241,6 @@ h2 {
   flex-wrap: wrap;
 }
 
-
 @media (min-width: 800px) {
   .functionality > div {
     width: 50%;
@@ -267,8 +266,6 @@ h3{
   color: #914626;
   text-transform: uppercase;
 }
-
-
 
 footer {
   background: #070302;
