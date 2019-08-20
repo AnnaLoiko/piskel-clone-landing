@@ -1,0 +1,305 @@
+@charset "utf-8";
+
+html {
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+html, body, p, ul, li, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 320px;
+  font-size: 15px;
+  font-family: "Arial", sans-serif;
+  line-height: 1.2;
+}
+
+.header-main {
+  background: #914626;
+  padding: 15px 0;
+}
+
+.header-main a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-main a:hover,
+.header-main a:focus,
+.header-main a:active {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.row {
+  padding: 0 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #914626;
+  padding: 10px 60px;
+  color: #ffffff;
+  font-size: 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 50px auto;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus {
+  background: #ffd701;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h1 {
+  margin: 10px 20px;
+  color: #301500;
+  font-size: 30px;
+}
+
+@media (min-width: 800px) {
+  h1 {
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    color: #ffffff;
+    font-size: 50px;
+    max-width: 35%;
+    margin: 0;
+  }
+}
+
+.intro {
+  padding: 50px 0;
+}
+
+@media (max-width: 799px) {
+  .intro {
+    padding: 10px 0 20px;
+  }
+}
+
+h2 {
+  margin: 10px 0;
+  color: #914626;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 799px) {
+  h2 {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 800px) {
+  .tools {
+    margin: 40px auto 100px;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 350px 1fr;
+    grid-template-rows: repeat(3, 140px);
+    align-items: start;
+    font-size: 20px;
+  }
+
+  .tools .box1 {
+    order: 2;
+    text-align: center;
+    grid-area: 1 / 2 / 4 / 3;
+  }
+
+  .tools .box2 {
+    order: 3;
+    margin-top: -25px;
+  }
+
+  .tools .box3 {
+    order: 1;
+    align-self: center;
+  }
+
+  .tools .box4 {
+    order: 4;
+  }
+
+  .tools .box5 {
+    order: 5;
+    align-self: center;
+  }
+
+  .tools .box6 {
+    order: 6;
+  }
+
+  .tools .box7 {
+    order: 7;
+    align-self: center;
+  }
+
+  .tools .box8 {
+    order: 8;
+  }
+
+  .tools .box-left {
+    text-align: right;
+  }
+
+  .tools > div {
+    position: relative;
+  }
+
+  .tools > div.box-left {
+    position: relative;
+  }
+
+  .tools > div:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -15px;
+    height: 9px;
+    width: 9px;
+    background: #914626;
+    border-radius: 50%;
+  }
+
+  .tools > div.box-left:before {
+    left: auto;
+    right: 0;
+  }
+
+  .tools > div:after {
+    background: #914626;
+    position: absolute;
+    content: '';
+  }
+
+  .tools > div:after {
+    left: -85px;
+  }
+
+  .tools > div:after {
+    height: 1px;
+    width: 80px;
+    bottom: -12px;
+  }
+
+  .tools > div.box-left:after {
+    left: auto;
+    right: -85px;
+  }
+
+  .tools .box1::before,
+  .tools .box1::after {
+    display: none;
+  }
+}
+
+@media (max-width: 799px) {
+  .tools {
+    margin: 20px auto 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, auto);
+    align-items: start;
+    font-size: 15px;
+  }
+
+  .tools .box1 {
+    order: 2;
+    text-align: center;
+    grid-area: 1 / 2 / 8 / 4;
+  }
+
+  .tools > div {
+    text-align: right;
+  }
+}
+
+.functionality {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+@media (min-width: 800px) {
+  .functionality > div {
+    width: 50%;
+    padding: 60px;
+  }
+}
+
+.functionality > div {
+  box-sizing: border-box;
+  text-align: center;
+  padding: 20px;
+}
+
+.functionality img {
+  display: inline-block;
+  margin: 40px auto;
+  box-sizing: border-box;
+}
+
+h3{
+  font-size: 20px;
+  margin: 10px auto;
+  color: #914626;
+  text-transform: uppercase;
+}
+
+
+
+footer {
+  background: #070302;
+  padding: 25px 0;
+  text-align: right;
+}
+
+footer a {
+  display: inline-block;
+  color: #ffffff;
+  font-size: 13px;
+  font-style: normal;
+  position: relative;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffd701;
+}
+
+@media (min-width: 800px) {
+  footer a:not(:last-child):after {
+    content: "/";
+    padding: 10px;
+    text-transform: none;
+  }
+}
+
+@media (max-width: 799px) {
+  footer a {
+    display: block;
+    padding: 3px 0;
+  }
+}
